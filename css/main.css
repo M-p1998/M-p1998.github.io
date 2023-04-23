@@ -1,0 +1,470 @@
+
+
+/* sticky nav bar */
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-toggler {
+  color: pink;
+}
+
+
+nav{
+  padding: 20px;
+}
+
+.navbar {
+  background-color: rgb(191, 163, 163); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(191, 163, 163);
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  color: rgb(191, 163, 163);
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+} 
+
+
+
+
+.my-image {
+    margin-right: 20px;
+}
+
+.my-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.my-content {
+    flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .my-container {
+        flex-direction: column;
+    }
+    
+    .my-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+body{
+  background: #0000;
+  min-height: 200vh ;
+ 
+  overflow-x: hidden;
+}
+ 
+ header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;  
+
+} 
+
+
+
+
+header.sticky{
+  padding: 20px 100px;
+  height: 100px;
+  background: #000;
+}
+
+header .logo{
+  
+  
+  color: rgb(191, 163, 163);
+  text-decoration: none;
+  font-size: 1.5em;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+
+
+
+ header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  
+}
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(191, 163, 163);
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+} 
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    
+   
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}  
+
+
+
+.background {
+   
+    background-color: rgb(32, 37, 8);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+   
+  }
+
+  
+
+  .my-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 10px;
+   
+    padding: 20px;
+    max-width: 600px;
+   
+   
+    
+}
+
+
+.my-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.my-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+} 
+
+.my-content {
+    text-align: center;
+} 
+
+
+
+
+
+h1 {
+  margin: 0;
+  color:rgb(191, 163, 163);
+}
+h3 {
+    margin: 0;
+}
+
+
+h4 {
+    font-size: 100px;
+    color: rgb(191, 163, 163);
+    margin-bottom: 10px;
+    
+}
+
+
+h6{
+    color: black;
+}
+
+
+
+h3 {
+    font-size: 18px; 
+    color: rgb(147, 138, 138);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+
+ .work-experience {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+  }
+
+
+  .job-details {
+    flex: 1;
+  }
+
+  .company-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+
+
+
+  .second-sec{
+
+    margin-top: 20px;
+    max-width: 70rem;
+    padding: 40px;
+    margin: 50px auto 0;
+
+  
+
+  }
+  
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    width: calc(50% - 10px);
+    margin: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+  
+  .project:nth-child(2n) {
+    background-color: #ffffff;
+  }
+  
+
+header nav {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+}
+
+header nav.active {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(191, 163, 163);
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+
+    display: none;
+  }
+
+
+  
+ 
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 20px 0;
+   
+  }
+
+  .toggle-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+   width: 0 30px;
+   border: 3px solid rgb(191, 163, 163);
+   border-radius: 5px;
+   
+  }
+
+  .toggle-button .bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px 5px;
+    background-color: rgb(191, 163, 163);
+    transition: all 0.3s ease-in-out;
+    
+  }
+
+  .toggle-button.active .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.active .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+/* footer */
+.outer-div {
+  background-color: black;
+  margin-top: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.box {
+  background-color: rgb(191, 163, 163);
+  padding: 30px;
+  border-radius:5px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  margin: 20px;
+  text-align: center;
+ 
+ 
+  
+}
+.connect{
+    margin: 30px;
+    text-align: center;
+}
+
+ 
+footer h3 {
+  font-weight: bold;
+}
+      
+ footer p {
+   margin-bottom: 50px;
+ }
+
+
+ @media screen and (max-width: 800px) {
+  .box {
+    width: 50%;
+   
+   
+  }
+}
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 50%;
+  
+  }
+}
+
+
+
+
+
+
+
