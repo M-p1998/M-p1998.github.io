@@ -67,11 +67,15 @@
   align-items: center;
   font-family: monospace;
   color: rgb(11, 11, 10);
-  text-decoration: none;
+  
 }
 
 .access-link {
   order: -1;
+  text-decoration: none;
+}
+.source-link {
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
